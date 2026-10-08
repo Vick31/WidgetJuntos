@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.juntos.widget"
-        minSdk = 26
+        minSdk = 28
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -41,4 +41,7 @@ dependencies {
 
     // Widgets con Jetpack Glance
     implementation("androidx.glance:glance-appwidget:1.1.1")
+
+    // Actualización diaria del widget y del fondo de bloqueo
+    implementation("androidx.work:work-runtime-ktx:2.10.1")
 }
